@@ -11,14 +11,21 @@
             display: flex;
             align-content: center;
             justify-content: center;
-            height: calc(100vh - 35px);
-            width: calc(100vw - 35px);
+            height: calc(100vh);
+            width: calc(100vw);
+            margin: 0;
+            padding: 0;
         }
 
         body .logo {
+            display: inherit;
             width: 250px;
-            max-width: calc(100vw - 35px);
+            max-width: calc(100vw);
             text-decoration: none;
+        }
+        
+        body .logo img {
+            width: 100%;
         }
     </style>
 </head>
