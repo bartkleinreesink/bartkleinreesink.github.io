@@ -1,8 +1,6 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: home
+title: ""
+description: "PHP webdevelopment based in The Netherlands"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.

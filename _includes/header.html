@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        {% seo %}
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    </head>
+
+    <body class="font-mono text-gray-500 dark:text-gray-200 bg-gray-50 dark:bg-zinc-800">
+        <a href="/" class="block mx-auto my-16 w-max">
+            <span class="sr-only">home</span>
+            <picture>
+                <source srcset="{{ "/assets/img/logo-alt.svg" | relative_url }}" media="(prefers-color-scheme: dark)">
+                <img src="{{ "/assets/img/logo.svg" | relative_url }}" alt="Fabrikage logo" class="mx-auto mb-10 w-60">
+            </picture>
+        </a>
+        <header class="mt-8 mb-24">
+            <h1 class="text-sm tracking-widest text-center">
+                <span class="block my-2">BART KLEIN REESINK</span>
+                <span class="block font-bold">PHP developer</span>
+            </h1>
+            <!-- <h1 class="text-4xl font-bold text-center"> {{ page.title }}</h1>
+      <p class="text-center"> {{ page.date | date_to_string }}</p> -->
+        </header>
+        <main class="max-w-screen-sm px-8 mx-auto font-mono">

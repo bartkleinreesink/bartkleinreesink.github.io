@@ -1,0 +1,12 @@
+{% include header.html %}
+
+{% if site.projects.size > 0 %}
+<h3 class="mb-6 font-bold text-center">THINGS I'VE MADE</h3>
+<div class="flex flex-col gap-5 cards">
+  {% for post in site.projects %}
+  {% include components/card-bar.html %}
+  {% endfor %}
+</div>
+{% endif %}
+
+{% include footer.html %}

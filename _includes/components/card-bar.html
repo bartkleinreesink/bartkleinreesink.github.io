@@ -1,0 +1,18 @@
+{% if post.external_url %}
+{% assign url = post.external_url %}
+{% assign target = "_blank" %}
+{% else %}
+{% assign url = post.url %}
+{% assign target = "_self" %}
+{% endif %}
+
+<a href="{{ url }}" target="{{ target }}" class="block max-w-md p-6 mx-auto bg-white border rounded-lg shadow border-zinc-200 hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700">
+    <p class="font-normal text-zinc-700 dark:text-zinc-400">
+        <strong>{{ post.title }}</strong> - {{ post.description }}
+    </p>
+    <!-- {% if post.composer_command %}
+    <span class="block mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+        {% highlight bash %}{{ post.composer_command }}{% endhighlight %}
+    </span>
+    {% endif %} -->
+</a>

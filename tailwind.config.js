@@ -6,11 +6,12 @@ module.exports = {
         "./_posts/*.md",
         "./*.md",
         "./*.html",
+        "_config.yml",
     ],
     theme: {
         theme: {
             extend: {},
         },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/typography")],
 };

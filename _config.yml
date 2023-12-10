@@ -1,9 +1,20 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://fabrikage.nl" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Fabrikage" # the name of your site, e.g. ACME Corp.
+article_classes: "prose dark:prose-invert"
 
 plugins:
-  - jekyll-postcss
+  - jekyll-postcss-v2
+  - jekyll-seo-tag
+
+collections:
+  - projects
+  # projects:
+  #   output: true
 
 postcss:
   cache: false
+
+markdown: kramdown
+
+highlighter: rouge
