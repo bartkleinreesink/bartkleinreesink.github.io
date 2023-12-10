@@ -6,3 +6,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+    @apply opacity-90;
+
+    &:hover {
+        @apply opacity-100;
+    }
+}
