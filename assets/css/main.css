@@ -1,5 +1,6 @@
 .highlight pre {
-    @apply bg-zinc-900;
+    --tw-bg-opacity: 1;
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 .highlight .hll {
     background-color: #272822;
