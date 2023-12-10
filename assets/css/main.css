@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "monokai.css";
+@import "./monokai.css";
 
 @tailwind base;
 @tailwind components;
