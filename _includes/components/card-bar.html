@@ -6,7 +6,7 @@
 {% assign target = "_self" %}
 {% endif %}
 
-<a href="{{ url }}" target="{{ target }}" class="block max-w-md p-6 mx-auto bg-white border rounded-lg shadow border-zinc-200 hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700">
+<a href="{{ url }}" target="{{ target }}" class="relative flex max-w-md p-6 mx-auto mt-0 transition-all duration-75 ease-linear bg-white border rounded-lg shadow hover:-mt-[2px] hover:mb-[2px] group border-zinc-200 hover:bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700">
     <p class="font-normal text-zinc-700 dark:text-zinc-400">
         <strong>{{ post.title }}</strong> - {{ post.description }}
     </p>
